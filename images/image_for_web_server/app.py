@@ -130,9 +130,9 @@ def update_record():
             return render_template('add-update.html', not_valid=True, message='Invalid input: Phone number should be in numeric format', show_result=False, action_name='update', developer_name='Oliver')
 
         result = update_person(name, phone_number)
-        return render_template('add-update.html', show_result=True, result=result, not_valid=False, action_name='update', developer_name='Oliver')
+        return render_template('add-update.html', show_result=True, result=result, not_valid=False, action_name='update', developer_name='Polat')
     else:
-        return render_template('add-update.html', show_result=False, not_valid=False, action_name='update', developer_name='Oliver')
+        return render_template('add-update.html', show_result=False, not_valid=False, action_name='update', developer_name='Polat')
 
 # Write a function named `delete_record` which updates the record in the db using `GET` and `POST` methods,
 # using template files named `delete.html` given under `templates` folder
